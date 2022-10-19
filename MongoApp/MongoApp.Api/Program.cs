@@ -1,3 +1,5 @@
+using MongoApp.Extension.Mongo;
+using MongoApp.Extension.Mongo.Repository;
 using MongoApp.Repository.Repository.City;
 using MongoApp.Repository.Settings;
 
@@ -10,6 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddSingleton<IRedisConnectionFactory, RedisConnectionFactory>();
+builder.Services.AddSingleton<ICacheService, RedisCacheManager>();
 
 IConfiguration configuration = new ConfigurationBuilder()
    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
@@ -23,6 +27,8 @@ builder.Services.Configure<MongoDbSettings>(options =>
         .GetSection(nameof(MongoDbSettings) + ":" + MongoDbSettings.ConnectionStringValue).Value;
     options.Database = configuration
         .GetSection(nameof(MongoDbSettings) + ":" + MongoDbSettings.DatabaseValue).Value;
+    options.RedisCache = configuration
+    .GetSection(nameof(MongoDbSettings) + ":" + MongoDbSettings.RedisCacheValue).Value;
 });
 
 

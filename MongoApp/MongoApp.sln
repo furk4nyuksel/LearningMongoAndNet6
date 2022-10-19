@@ -5,11 +5,13 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoApp.Data", "MongoApp.Data\MongoApp.Data.csproj", "{85B1EA86-A7DD-4289-B0B9-571B3F6D89A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoApp.Repository", "MongoApp.Repository\MongoApp.Repository.csproj", "{72E973F6-A260-42D0-9E06-C21D92CBC35E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoApp.Repository", "MongoApp.Repository\MongoApp.Repository.csproj", "{72E973F6-A260-42D0-9E06-C21D92CBC35E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoApp.ConsoleApp", "MongoApp.ConsoleApp\MongoApp.ConsoleApp.csproj", "{0ABB6F40-8DCD-4228-A80F-71AFD0651052}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoApp.ConsoleApp", "MongoApp.ConsoleApp\MongoApp.ConsoleApp.csproj", "{0ABB6F40-8DCD-4228-A80F-71AFD0651052}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoApp.Api", "MongoApp.Api\MongoApp.Api.csproj", "{A82921C8-3A53-4167-9448-90FF29C516F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoApp.Api", "MongoApp.Api\MongoApp.Api.csproj", "{A82921C8-3A53-4167-9448-90FF29C516F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoApp.Extension", "MongoApp.Extension\MongoApp.Extension.csproj", "{D1A54510-86E2-41CA-A3F8-EF762634E4B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A82921C8-3A53-4167-9448-90FF29C516F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A82921C8-3A53-4167-9448-90FF29C516F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A82921C8-3A53-4167-9448-90FF29C516F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1A54510-86E2-41CA-A3F8-EF762634E4B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1A54510-86E2-41CA-A3F8-EF762634E4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1A54510-86E2-41CA-A3F8-EF762634E4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1A54510-86E2-41CA-A3F8-EF762634E4B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
