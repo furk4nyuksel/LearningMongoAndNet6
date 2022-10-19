@@ -60,13 +60,23 @@ namespace MongoApp.Api.Controllers
             {
                 globalMapList.Add(new GlobalMap()
                 {
-                    Code= guid,
-                    Name= guid,
-                    Id= guid,
+                    Code = guid,
+                    Name = guid,
+                    Id = guid,
                 });
             }
             _cacheService.Add("Map", globalMapList);
             return Ok();
+        }
+
+
+        [Route("GetJsonMapData")]
+        [HttpGet]
+        public IActionResult GetJsonMapData()
+        {
+            List<GlobalMap> globalMapList = _cacheService.Get<List<GlobalMap>>("Map");
+
+            return Ok(globalMapList);
         }
     }
 }
